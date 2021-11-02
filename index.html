@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>: : FIX ALlocs : :</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head container">
+            <h1 class="logo">FIX</h1>
+        </div>
+    </header>
+    <div class="main container">
+        <div class="search-bar">
+            <button class="btn btn-options">
+                <span>Block Id</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <div class="options">
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Block Id</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Alloc Id</li>
+                    </ul>
+                </div>
+            </button>
+            <input type="text" class="text-control">
+            <button class="btn btn-search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="preset-search-links">
+            <div class="preset-links">
+                <div class="card">
+                    <div class="card-header">
+                        Single Match
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                       65 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Single Mismatch
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                        18
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Synthetic Match
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                        12
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Synthetic Mismatch
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                        09
+                    </div>
+                </div>
+            </div>
+            <div class="preset-links">
+                <div class="card">
+                    <div class="card-header">
+                        Single Match
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                        65
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Single Mismatch
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                        18
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Synthetic Match
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                        12
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Synthetic Mismatch
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="card-value">
+                        09
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="btn create disabled">
+                <i class="fa fa-add" aria-hidden="true"></i>
+                Create Allocation
+            </button>
+            <button class="btn compare">
+                <i class="fa fa-code-compare" aria-hidden="true"></i>
+                Compare
+            </button>
+        </div>
+        <div class="result">
+            <table class="result-table">
+                <thead>
+                    <th>
+                        <input type="checkbox" name="select-ex" id="select-all-ex">
+                    </th>
+                    <th></th>
+                    <th>Region</th>
+                    <th>Reference</th>
+                    <th>Exception</th>
+                    <th>Date/Time</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="select-ex" id="select-ex-1">
+                        </td>
+                        <td>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <div class="details">
+                                <table class="small-table">
+                                    <thead>
+                                        <th>Field 1 Field 1</th>
+                                        <th>Field 2</th>
+                                        <th>Field 3 Field 1</th>
+                                        <th>Field 4</th>
+                                        <th>Field 5</th>
+                                        <th>Field 6 Field 1</th>
+                                        <th>Field 7</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Field 1</td>
+                                            <td>Field 2</td>
+                                            <td>Field 3</td>
+                                            <td>Field 4</td>
+                                            <td>Field 5</td>
+                                            <td>Field 6</td>
+                                            <td>Field 7</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>EMEA</td>
+                        <td>123334259910:001</td>
+                        <td>Lorem ipsum .</td>
+                        <td>31-Oct-2021 00:48:00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="select-ex" id="select-ex-1">
+                        </td>
+                        <td>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </td>
+                        <td>AMER</td>
+                        <td>123334259910:001:FTS-INT</td>
+                        <td>Lorem ipsum dolo</td>
+                        <td>31-Oct-2021 00:48:00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="select-ex" id="select-ex-1">
+                        </td>
+                        <td>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </td>
+                        <td>AMER</td>
+                        <td>123334259910:001:FTS-INT</td>
+                        <td>Lorem ipsum dolo</td>
+                        <td>31-Oct-2021 00:48:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

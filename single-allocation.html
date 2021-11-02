@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>: : FIX Allocs : :</title>
+    <link rel="stylesheet" href="./single-alloc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2 class="header">FIX Allocation</h2>
+    </header>
+    <div class="main">
+        <div class="row">
+            <div class="col-h">Match Type :</div>
+            <div class="col-input">
+                <button class="btn match-type">
+                    <span>Single Match</span>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <div class="match-options">
+                        <ul>
+                            <li class="active"><a href="#">Single Match</a></li>
+                            <li><a href="#">Synthetic Match</a></li>
+                            <li><a href="#">Synthetic Merge</a></li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="alloc-details">
+            <div class="row">
+                <div class="col-h">Product Type :</div>
+                <div class="col-input">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-h">Product Type :</div>
+                <div class="col-input">
+            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-h">Product Type :</div>
+                <div class="col-input">
+            
+                </div>
+            </div>
+        </div>
+        <div class="alloc-splits">
+            <div class="splits-table-container">
+                <table class="alloc-table">
+                    <thead>
+                        <th>Quantity</th>
+                        <th>Fund Id</th>
+                        <th>Price</th>
+                        <th>Commission</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr class="split-data">
+                            <td>300</td>
+                            <td>TEST</td>
+                            <td>300</td>
+                            <td>FLAT : 20</td>
+                            <td>
+                                <button class="btn btn-remove">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="new-split">
+                            <td>
+                                <input type="text" class="text-control" />
+                            </td>
+                            <td>
+                                <input type="text" class="text-control" />
+                            </td>
+                            <td>
+                                <input type="text" class="text-control" />
+                            </td>
+                            <td class="comm-grp">
+                                <button class="btn comm-type">
+                                    <span>FLAT</span>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <div class="comm-options">
+                                        <ul>
+                                            <li><i class="fa fa-check active" aria-hidden="true"></i>FLAT</li>
+                                            <li><i class="fa fa-check" aria-hidden="true"></i>PERC</li>
+                                            <li><i class="fa fa-check" aria-hidden="true"></i>BASI</li>
+                                        </ul>
+                                    </div>
+                                </button>
+                                <input type="text" class="text-control" />
+                            </td>
+                            <td>
+                                <button class="btn btn-add">
+                                    <i class="fa fa-add" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="action">
+            <button class="btn cancel">
+                <i class="fa fa-remove" aria-hidden="true"></i>
+                <span>Cancel</span>
+            </button>
+            <button class="btn save primary">
+                <i class="fa fa-save" aria-hidden="true"></i>
+                <span>Save</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
