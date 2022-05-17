@@ -1,0 +1,214 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+:root {
+    --bg: #fff;
+    --border: #ddd;
+    --hover: rgba(221, 221, 221, 0.479);
+    --hover-options: rgb(240, 248, 255);
+    --primary: #1A73E8;
+    --primary-header: #1B66CA;
+    --primary-txt: #fff;
+    --txt: #5f6368;
+    --txt-main: #202124;
+    
+    --warn: #d56e0c;
+    --danger: rgb(235, 17, 17);
+    --success: rgb(11, 117, 29);
+    --inactive: rgb(185, 182, 182);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--bg);
+    color: var(--txt);
+}
+
+svg {
+    fill: currentColor;
+}
+
+.container {
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 0.2);
+    max-height: 40rem;
+    /* min-height: 40rem;
+    min-width: 30rem; */
+    margin-inline: 1rem;
+}
+
+.body,
+.header {
+    padding: 1rem;
+}
+
+.header {
+    border-bottom: 1px solid var(--border);
+}
+
+.header h2 {
+    color: var(--primary-header);
+    font-weight: 600;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-section {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.text {
+    width: 100%;
+    outline: 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+}
+
+.btn-add {
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-txt);
+    box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+}
+
+.btn-add:hover {
+    background-color: var(--primary-header);
+}
+
+.task-list {
+    list-style: none;
+}
+
+.task {
+    border: 1px solid var(--border);
+    margin-bottom: 0.3rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.status,
+.options-btn,
+.description {
+    padding: 0.8rem 0.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    color: var(--txt-main)
+}
+
+.status {
+    margin-inline: 0.3rem;
+}
+
+.options-btn {
+    border: 0;
+    cursor: pointer;
+    background-color: var(--bg);
+    padding: 0.5rem;
+    border-left: 1px solid var(--border);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-btn {
+    outline: none;
+    margin-inline: 0.5rem;
+    cursor: pointer;
+    border: 0;
+    background-color: var(--bg);
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    transition: background-color .2s ease-in-out;
+}
+
+.options-btn:hover {
+    background-color: var(--hover);
+}
+
+.options {
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    top: calc(96%);
+    right: -1px;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    z-index: 4000;
+    box-shadow: 0 0 3px 0px rgb(0 0 0 / 0.2);
+    opacity: 0;
+    transform: translateY(-0.2rem);
+    pointer-events: none;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.option {
+    padding: 0.8rem 1.5rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    transition: background-color .1s ease-in-out, color .1s ease-in-out;
+}
+
+.option:hover {
+    background-color: var(--hover-options);
+    color: var(--primary);
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.tab {
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.tab:hover {
+    background-color: var(--hover-options);
+    color: var(--primary);
+}
+
+.tab.active {
+    background-color: var(--primary);
+    color: var(--primary-txt);
+}
